@@ -69,6 +69,12 @@ class Program
             Console.WriteLine("Username tidak ditemukan.");
         }
 
+        static void CekSaldo(decimal saldo)
+        {
+            Console.WriteLine($"\nSaldo Anda saat ini: Rp{saldo:N}");
+        }
+
+
        
     }
 }
