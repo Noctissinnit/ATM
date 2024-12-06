@@ -33,29 +33,29 @@ class Program
                     Console.WriteLine("3. Logout ");
                     Console.WriteLine("=== Menu Atm ===");
 
-                    // switch (pilihan)
-                    // {
-                    //     case "1":
-                    //         CekSaldo(saldo);
-                    //         break;
-                    //     case "2":
-                    //         saldo = TarikTunai(saldo, transaksi);
-                    //         break;
-                    //     case "3":
-                    //         saldo = SetorTunai(saldo, transaksi);
-                    //         break;
-                    //     case "4":
-                    //         TampilkanRiwayat(transaksi);
-                    //         break;
-                    //     case "5":
-                    //         pengguna[username] = (pin, saldo); 
-                    //         Console.WriteLine("Logout berhasil. Tekan Enter untuk kembali ke login.");
-                    //         Console.ReadLine();
-                    //         goto Logout; 
-                    //     default:
-                    //         Console.WriteLine("Pilihan tidak valid. Coba lagi.");
-                    //         break;
-                    // } 
+                    switch (pilihan)
+                    {
+                        case "1":
+                            CekSaldo(saldo);
+                            break;
+                        case "2":
+                            saldo = TarikTunai(saldo, transaksi);
+                            break;
+                        case "3":
+                            saldo = SetorTunai(saldo, transaksi);
+                            break;
+                        case "4":
+                            TampilkanRiwayat(transaksi);
+                            break;
+                        case "5":
+                            pengguna[username] = (pin, saldo); 
+                            Console.WriteLine("Logout berhasil. Tekan Enter untuk kembali ke login.");
+                            Console.ReadLine();
+                            goto Logout; 
+                        default:
+                            Console.WriteLine("Pilihan tidak valid. Coba lagi.");
+                            break;
+                    } 
 
                 }
             }
